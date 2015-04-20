@@ -1,0 +1,22 @@
+<div class="installSteps">
+     			<ol>
+     				<li>Step1: Launch Cydia</li>
+        			<li>Step2: Click the "Manage" button.</li>
+        			<li>Step3: Click the "Sources" button.</li>
+        			<li>Step4: Click the "Edit" button.</li>
+        			<li>Step5: Click the "Add" button.</li>
+        			<li>Step6: Input the following URL"http://chrisrjones.com/repo"</li>
+        			<li>Step7: Click "Add Source" button.</li>
+        			<li>Step8: Select the repo, then select "KegCop".</li>
+        			<li>Step9: Click the "Install" button, then click "Confirm".</li>
+      			</ol>
+     		</div>
+
+<div class="installVideo">
+                <video width="320" height="502" controls>
+                <!-- MP4 must be first for iPad! -->
+                    <source src="media/video/KegCop-Install.mp4">
+                    <source src="media/video/KegCop-Install.webm"> <!-- Chrome10+, Ffx4+, Opera10.6+ -->
+                    :( Your browser does not support the video tag.
+                </video>
+            </div>

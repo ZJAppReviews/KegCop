@@ -43,27 +43,8 @@
         <div class="anchor-up-link"><a href="#">Back to top</a></div>
         <section id="install">
      		<h1>Install</h1>
-     		<div class="installSteps">
-     			<ol>
-     				<li>Step1: Launch Cydia</li>
-        			<li>Step2: Click the "Manage" button.</li>
-        			<li>Step3: Click the "Sources" button.</li>
-        			<li>Step4: Click the "Edit" button.</li>
-        			<li>Step5: Click the "Add" button.</li>
-        			<li>Step6: Input the following URL"http://chrisrjones.com/repo"</li>
-        			<li>Step7: Click "Add Source" button.</li>
-        			<li>Step8: Select the repo, then select "KegCop".</li>
-        			<li>Step9: Click the "Install" button, then click "Confirm".</li>
-      			</ol>
-     		</div>
-     		<div class="installVideo">
-				<video width="320" height="502" controls>
-    			<!-- MP4 must be first for iPad! -->
-    				<source src="media/video/KegCop-Install.mp4">
-        			<source src="media/video/KegCop-Install.webm"> <!-- Chrome10+, Ffx4+, Opera10.6+ -->
-        			:( Your browser does not support the video tag.
-    			</video>
-    		</div>
+     		
+     		
     		<div class="clear"></div>
      		<hr />
      </section>
@@ -205,19 +186,6 @@ var beerBackground = d3.select("body").transition()
 </script>
 
 <script type="text/javascript">
-//d3.select("body").append("svg").attr("width", 50).attr("height", 50).append("circle").attr("cx", 25).attr("cy", 25).attr("r", 25).style("fill", "purple");
-
-// var bodySelection = d3.select("body");
-
-// var svgSelection = bodySelection.append("svg")
-//  .attr("width", 50)
-//  .attr("width", 50);
-
-// var circleSelection = svgSelection.append("circle")
-//  .attr("cx", 25)
-//  .attr("cy", 25)
-//  .attr("r", 25)
-//  .style("fill", "purple");
 
 w = window.innerWidth,
 h = window.innerHeight;
@@ -255,13 +223,6 @@ h = window.innerHeight;
     
     d3.timer(function() 
     {
-    
-      // Update the FPS meter.
-      // var now = Date.now(), duration = now - start;
-      // text.text(~~(++frames * 1000 / duration));
-      // if (duration >= 1000) frames = 0, start = now;
-    
-      // Update the circle positions.
       circle
           .attr("cx", function(d) { d.x += Math.random()*3*Math.sin(Math.random()*3*d.x + Math.random()*10); if (d.x > w) d.x -= w; else if (d.x < 0) d.x += w; return d.x; })
           .attr("cy", function(d) { d.y += d.dy ; if (d.y > h) d.y -= h; else if (d.y < 0) d.y += h; return d.y; })
@@ -270,43 +231,6 @@ h = window.innerHeight;
             return (d.y < 100) ? d3.select(this).attr("r") : d.mu*500/d.y;
           });
     });
-
-
-// var bubblesDivWidth = window.innerWidth;
-// var bubblesDivHeight = window.innerHeight;
-// var bDH1 = window.innerHeight + 1;
-// var bStartY = (bDH1 - bubblesDivHeight);
-
-// circleRadius = [],
-
-// i = 0
-
-// for (i=0; i<50; i++){ // second value = # of circles
-//    circleRadius.push(Math.round(Math.random()*100));
-// }
-
-// var svgContainer = d3.select("#bubbles").append("svg")
-// .attr("width", bubblesDivWidth)
-// .attr("height", bubblesDivHeight);
-
-// var circles = svgContainer.selectAll("circle")
-//    .data(circleRadius)
-//    .enter()
-//    .append("circle")
-
-// var circleAttributes = circles
-// .attr("cx", function(d, i){return i*80})
-// .attr("cy", bubblesDivHeight)// starting point for bubbles
-// .attr("r", Math.random() * 12 + 4) // works better than below line.
-// //.attr("r", function(d, i){return i*Math.random()*2})
-// .style("fill", "white")
-// .style("fill-opacity", "0.2")
-// .style("stroke", "white")
-// .style("stroke-opacity", "0.4")
-
 </script>
-
-
-  
 </body>
 </html>
