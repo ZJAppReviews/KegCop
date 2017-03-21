@@ -1,0 +1,20 @@
+{
+  "name": "KegCop",
+  "version": "1.0.0",
+  "description": "This is the README.md for the gh-pages branch of KegCop.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipatch/KegCop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ipatch/KegCop/issues"
+  },
+  "homepage": "https://github.com/ipatch/KegCop#readme"
+}

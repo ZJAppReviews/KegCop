@@ -53,3 +53,10 @@ scripts/profile/*
 !scripts/certs/dist.cer.enc
 !scripts/certs/dist.p12.enc
 !scripts/profile/travis-ci.mobileprovision.enc
+#
+#
+###################################################
+# React specific ignore files
+###################################################
+#
+node_modules
