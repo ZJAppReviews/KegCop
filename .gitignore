@@ -60,5 +60,5 @@ scripts/profile/*
 ###################################################
 #
 node_modules
-www/bundle.js
+#www/bundle.js
 npm-debug.log
