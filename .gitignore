@@ -3,3 +3,5 @@ node_modules
 KegCop.xcworkspace/
 Pods/
 npm-debug.log
+##############
+www/bundle.js
