@@ -1,5 +1,4 @@
 # KegCop
-***
 This is the README.md for the gh-pages branch of KegCop.
 
 To visit the actual site / page go to the below page.
