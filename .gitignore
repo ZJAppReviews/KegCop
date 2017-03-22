@@ -6,5 +6,5 @@ npm-debug.log
 ##############
 #www/bundle.js
 # Ignore compiled webpack bundle
-dist
+# dist
 scratchpad.txt
