@@ -6,8 +6,15 @@ var webpackConfig = require("./webpack.config");
 var app = express();
 var compiler = webpack(webpackConfig);
 
+app.use(express.static(__dirname + '/dist'));
+
 app.use(webpackDevMiddleware(compiler, {
-  publicPath: "/" // Same as `output.publicPath` in most cases.
+  hot: true,
+  filename: 'bundle.js',
+  publicPath: "/", // Same as `output.publicPath` in most cases.
+  stats: {
+    colors: true,
+  }
 }));
 
 app.listen(3000, function () {
