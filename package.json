@@ -4,11 +4,11 @@
   "description": "This is the README.md for the gh-pages branch of KegCop.",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node server.js",
+    "start": "webpack-dev-server",
     "compile": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm run compile",
-    "deploy": "gh-pages -d www"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
