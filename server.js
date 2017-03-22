@@ -1,25 +1,15 @@
-const express = require('express');
-const webpackDevMiddleware = require('webpack-dev-middleware');
-const webpack = require('webpack');
-const webpackConfig = require('./webpack.config.js');
-const app = express();
+var express = require("express");
+var webpackDevMiddleware = require("webpack-dev-middleware");
+var webpack = require("webpack");
+var webpackConfig = require("./webpack.config");
 
-const compiler = webpack(webpackConfig);
-
-app.use(express.static(__dirname + '/www'));
+var app = express();
+var compiler = webpack(webpackConfig);
 
 app.use(webpackDevMiddleware(compiler, {
-  hot: true,
-  filename: 'bundle.js',
-  publicPath: '/',
-  stats: {
-    colors: true,
-  },
-  historyApiFallback: true,
+  publicPath: "/" // Same as `output.publicPath` in most cases.
 }));
 
-const server = app.listen(3000, function() {
-  const host = server.address().address;
-  const port = server.address().port;
-  console.log('Example app listening at http://%s:%s', host, port);
+app.listen(3000, function () {
+  console.log("Listening on port 3000!");
 });
