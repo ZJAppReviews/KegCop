@@ -1,4 +1,4 @@
-console.log('Hello World!');
+console.log('Hello!');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
