@@ -30,6 +30,7 @@ module.exports = {
   context: resolve(__dirname, 'src'),
 
   devtool: 'inline-source-map',
+  // devtool: "source-map"
 
   devServer: {
     hot: true,
