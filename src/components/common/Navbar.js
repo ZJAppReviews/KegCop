@@ -27,15 +27,21 @@ var NavBar = React.createClass({
   }
 });
 // class App extends React.Component {
-var NavBrand = React.createClass({
-  render: function(){
-    return (
-      <Link to={ this.props.linkTo }>
-        <span className="navbar-brand">{this.props.text}</span>
-      </Link>
-    );
-  }
-});
+// BELOW - old way to create classes.
+// var NavBrand = React.createClass({
+//   render: function(){
+//     return (
+//       <Link to={ this.props.linkTo }>
+//         <span className="navbar-brand">{this.props.text}</span>
+//       </Link>
+//     );
+//   }
+// });
+const NavBrand = (props) => (
+  <Link to={props.linkTo}>
+    <span className="navbar-brand">{props.text}</span>
+  </Link>
+);
 
 var NavMenu = React.createClass({
   render: function(){
