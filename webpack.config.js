@@ -21,7 +21,7 @@ module.exports = {
     filename: 'bundle.js',
     // the output bundle
 
-    path: resolve(__dirname, 'dist'), // changed 'dist' to 'www'
+    path: resolve(__dirname, 'docs'), // changed 'dist' to 'www'
 
     publicPath: '/'
     // necessary for HMR to know where to load the hot update chunks
@@ -36,7 +36,7 @@ module.exports = {
     hot: true,
     // enable HMR on the server
 
-    contentBase: resolve(__dirname, 'dist'), // changed 'dist' to 'www'
+    contentBase: resolve(__dirname, 'docs'), // changed 'dist' to 'www'
     // match the output path
 
     publicPath: '/'
@@ -73,6 +73,6 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'
-    })
+    }),
   ],
 };
