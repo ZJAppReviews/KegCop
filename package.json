@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/ipatch/KegCop.git"
   },
-  "keywords": ["KegCop" "kegerator" "keg" "cop" "iOS"],
+  "keywords": ["KegCop", "kegerator", "keg", "cop", "iOS"],
   "author": "Chris Jones",
   "license": "MIT",
   "bugs": {
