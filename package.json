@@ -18,8 +18,8 @@
     "url": "git+https://github.com/ipatch/KegCop.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Chris Jones",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ipatch/KegCop/issues"
   },
