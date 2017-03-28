@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 import styles from './App.css';
 import NavBar from './common/Navbar';
-// import NavLink from './common/NavLink';
+import NavLink from './common/NavLink';
 
 var navbar = {};
 navbar.brand = {linkTo: "/", text: "chrisrjones.com"};

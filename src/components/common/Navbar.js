@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import ReactDOM from 'react-dom';
+import { Link, IndexLink } from 'react-router';
 
 
 // create classes
@@ -25,7 +26,7 @@ var NavBar = React.createClass({
     );
   }
 });
-
+// class App extends React.Component {
 var NavBrand = React.createClass({
   render: function(){
     return (
@@ -36,6 +37,33 @@ var NavBrand = React.createClass({
   }
 });
 
+var NavMenu = React.createClass({
+  render: function(){
+    var links = this.props.links.reduce(function(acc, current){
+      current.dropdown ? acc.rightNav.push(current) : acc.leftNav.push(current);
+      return acc;
+    }, { leftNav: [], rightNav: [] });
+    return (
+      <div>
+        <ul className="nav navbar-nav">
+          {links.leftNav.map( function(link) {
+            return <NavLink key={link.text} linkTo={link.linkTo} text={link.text} active={link.active} icon={link.icon} />
+          })}
+        </ul>
+        {
+          links.rightNav.length > 0 ?
+            <ul className="nav navbar-nav navbar-right">
+              {
+                links.rightNav.map( function(link) {
+                  return <NavLinkDropdown key={link.text} links={link.links} text={link.text} active={link.active} />
+                })
+              }
+            </ul> : false
+        }
+      </div>
+    );
+  }
+});
 
 var NavLinkDropdown = React.createClass({
   render: function(){
@@ -76,4 +104,8 @@ var NavLink = React.createClass({
   }
 });
 
+// export default NavBar;
 export default NavBar;
+
+// Note: the below export statement does not work with import
+// module.exports = NavBar;
