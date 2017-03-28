@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 import styles from './App.css';
 import NavBar from './common/Navbar';
 // import NavLink from './common/NavLink';
@@ -14,16 +14,20 @@ navbar.links = [
     ]}
 ];
 
-const App = () => (
-  <div className={styles.app}>
-    <NavBar {...navbar}/>
-    <h2>Hello, KegCop!</h2>
-    {this.props.children}
-  </div>
-);
+class App extends React.Component {
+  render() {
+    return (
+      <div className={styles.app}>
+        <NavBar {...navbar}/>
+        <h2>Hello, KegCop!</h2>
+        {this.props.children}
+        </div>
+      );
+    }
+}
 
-App.propTypes = {
-	children: PropTypes.object.isRequired
-};
+// App.propTypes = {
+// 	children: PropTypes.object.isRequired
+// };
 
 export default App;
