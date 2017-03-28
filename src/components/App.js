@@ -3,10 +3,6 @@ import styles from './App.css';
 // import NavBar from './common/Navbar';
 // import NavLink from './common/NavLink';
 
-
-
-
-
 const App = () => (
   <div className={styles.app}>
 
