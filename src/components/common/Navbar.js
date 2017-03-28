@@ -111,7 +111,7 @@ var NavLink = React.createClass({
 });
 
 // export default NavBar;
-export default NavBar;
+export default { NavBar };
 
 // Note: the below export statement does not work with import
 // module.exports = NavBar;

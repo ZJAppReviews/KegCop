@@ -30,4 +30,4 @@ class App extends React.Component {
 // 	children: PropTypes.object.isRequired
 // };
 
-export default App;
+export default { App };
