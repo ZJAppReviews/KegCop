@@ -34,7 +34,7 @@ import styles from './App.css';
 
 // Create a new component.  This component should produce some HTML.
 const App = () => {
-  return <div>Hi Diana!</div>;
+  return <div>Hello, KegCop!</div>;
 }
 
 // App.propTypes = {
