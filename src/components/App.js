@@ -1,50 +1,44 @@
 import React, {PropTypes} from 'react';
 import styles from './App.css';
-// import NavBar from './common/Navbar';
-// import NavLink from './common/NavLink';
-import NavBarTest from './common/NavBar-test';
+import NavBar from './common/NavBar-test';
 
-// var navbar = {};
-// navbar.brand = {linkTo: "/", text: "chrisrjones.com"};
-// navbar.links = [
-//     {linkTo: "/about", text: "About Me"},
-//     {linkTo: "/contact", text: "Contact" },
-//     {dropdown: true, text: "Contribute",  links: [
-//         {linkTo: "signup", text: "Sign Up" },
-//         {linkTo: "login", text: "Login" }
-//     ]}
-// ];
-
-// const NavBrand = (props) => (
-//   <Link to={props.linkTo}>
-//     <span className="navbar-brand">{props.text}</span>
-//   </Link>
-// );
-
-// class App extends React.Component {
-//   render() {
-//     return (
-//       <div className={styles.app}>
-//         // <NavBar {...navbar}/>
-//         <h2>Hello, React!</h2>
-//         {this.props.children}
-//       </div>
-//       );
-//     }
-// }
+var navbar = {};
+navbar.brand =  {
+  linkTo: "#",
+  text: "React Bootstrap Navbar"
+};
+navbar.links = [{
+  linkTo: "#",
+  text: "Link 1"
+},
+{
+  linkTo: "#",
+  text: "Link 2"
+},
+{
+  dropdown: true,
+  text: "Dropdown",
+  links: [{
+    linkTo: "#",
+    text: "Dropdown Link 1"
+  },
+  {
+    linkTo: "#",
+    text: "Dropdown Link 2",
+    active: true
+  }
+  ]
+}
+];
 
 // Create a new component.  This component should produce some HTML.
 const App = () => {
   return (
     <div id="parent">
-      <div>Hello, KegCop!</div>
-      <NavBarTest {...NavBarTest} /> // commenting this line will not change anything.
+      <div>Hello, App!</div>
+      <NavBar {...NavBar} /> // commenting this line will not change anything.
     </div>
   )
 }
-
-// App.propTypes = {
-// 	children: PropTypes.object.isRequired
-// };
 
 export default App;
