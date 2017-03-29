@@ -38,12 +38,12 @@ var NavMenu = React.createClass({
     var links = this.props.links.map(function(link){
       if(link.dropdown) {
         return (
-          <NavLinkDropdown links={link.links} text={link.text} active={link.active} />
+          <NavLinkDropdown key={link.text} links={link.links} text={link.text} active={link.active} />
         );
       }
       else {
         return (
-          <NavLink linkTo={link.linkTo} text={link.text} active={link.active} />
+          <NavLink key={link.text} linkTo={link.linkTo} text={link.text} active={link.active} />
         );
       }
     });
@@ -63,7 +63,7 @@ var NavLinkDropdown = React.createClass({
         active = true;
       }
       return (
-        <NavLink linkTo={link.linkTo} text={link.text} active={link.active} />
+        <NavLink key={link.text} linkTo={link.linkTo} text={link.text} active={link.active} />
       );
     });
     return (
