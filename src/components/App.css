@@ -12,6 +12,7 @@ html, body {
   margin: 0;
   height: 100%;
   background-color: rgb(245, 208, 55);
+  /*background-color: blue;*/
 }
 
 /* navbar */
@@ -31,9 +32,10 @@ html, body {
   background-color: red;
 }
 
-/* style the "diana" div */
+/* style the div w/ the id of "diana" */
 
 #diana {
   background-color: green;
-  border-style: solid red;
+  border-style: solid;
+  border-color: red;
 }
