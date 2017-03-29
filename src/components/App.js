@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 import styles from './App.css';
-import NavBar from './common/Navbar';
-import NavLink from './common/NavLink';
+// import NavBar from './common/Navbar';
+// import NavLink from './common/NavLink';
 
 var navbar = {};
 navbar.brand = {linkTo: "/", text: "chrisrjones.com"};
@@ -14,14 +14,20 @@ navbar.links = [
     ]}
 ];
 
+// const NavBrand = (props) => (
+//   <Link to={props.linkTo}>
+//     <span className="navbar-brand">{props.text}</span>
+//   </Link>
+// );
+
 class App extends React.Component {
   render() {
     return (
       <div className={styles.app}>
-        <NavBar {...navbar}/>
-        <h2>Hello, KegCop!</h2>
+        // <NavBar {...navbar}/>
+        <h2>Hello, React!</h2>
         {this.props.children}
-        </div>
+      </div>
       );
     }
 }
