@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
+import ReactDOM from 'react-dom';
 
 // create classes
 var NavBar = React.createClass({

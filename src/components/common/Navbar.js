@@ -2,7 +2,6 @@ import React, { PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import { Match, IndexLink } from 'react-router';
 
-
 // create classes
 var NavBar = React.createClass({
   render: function(){
@@ -26,17 +25,7 @@ var NavBar = React.createClass({
     );
   }
 });
-// class App extends React.Component {
-// BELOW - old way to create classes.
-// var NavBrand = React.createClass({
-//   render: function(){
-//     return (
-//       <Link to={ this.props.linkTo }>
-//         <span className="navbar-brand">{this.props.text}</span>
-//       </Link>
-//     );
-//   }
-// });
+
 const NavBrand = (props) => (
   <Link to={props.linkTo}>
     <span className="navbar-brand">{props.text}</span>
