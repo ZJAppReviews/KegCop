@@ -1,11 +1,11 @@
 import React, { PropTypes } from 'react';
-import ReactDOM from 'react-dom';
+import styles from './../App.css';
 
 // create classes
 var NavBar = React.createClass({
   render: function(){
     return(
-      <nav className="navbar navbar-inverse">
+      <nav className="navbar navbar-default navbar-static-top">
         <div className="container-fluid">
           <div className="navbar-header">
             <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
