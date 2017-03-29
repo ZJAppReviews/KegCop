@@ -1,5 +1,4 @@
 import React, {PropTypes} from 'react';
-import styles from './App.css';
 import NavBar from './common/NavBar-test';
 
 var navbar = {};
