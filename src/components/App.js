@@ -2,6 +2,7 @@ import React, {PropTypes} from 'react';
 import styles from './App.css';
 // import NavBar from './common/Navbar';
 // import NavLink from './common/NavLink';
+import NavBarTest from './common/NavBar-test';
 
 // var navbar = {};
 // navbar.brand = {linkTo: "/", text: "chrisrjones.com"};
@@ -34,7 +35,12 @@ import styles from './App.css';
 
 // Create a new component.  This component should produce some HTML.
 const App = () => {
-  return <div>Hello, KegCop!</div>;
+  return (
+    <div id="parent">
+      <div>Hello, KegCop!</div>
+      <NavBarTest {...NavBarTest} /> // commenting this line will not change anything.
+    </div>
+  )
 }
 
 // App.propTypes = {
