@@ -12,30 +12,66 @@ html, body {
   margin: 0;
   height: 100%;
   /*background-color: rgb(245, 208, 55);*/
+  /*background-color: #ba832c;*/
+  background-color: #2E2A24;
   /*background-color: blue;*/
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Roboto", sans-serif;
 }
 
 /* navbar */
 .navbar {
-  background-color: red;
+  /*background-color: rgb(245, 208, 55);*/
+  background-color: #2E2A24;
 }
 
 .navbar-default {
-  background-color: red;
+  background-color: #2E2A24;
+  /*background-color: rgb(245, 208, 55);*/
+  border-color: transparent;
 }
 
 .navbar-collapse {
-  background-color: red;
+  /*background-color: rgb(245, 208, 55);*/
+  background-color: #2E2A24;
 }
 
 .navbar-header {
-  background-color: red;
+  /*background-color: rgb(245, 208, 55);*/
+  background-color: #2E2A24;
+}
+
+.navbar-default .navbar-brand {
+  color: #F9D094;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  color: #F9D094;
+  border-color: #F9D094;
+  background-color: #F9D094;
+}
+
+.navbar-toggle, .icon-bar {
+   border:1px solid red;
+}
+
+.navbar-preheader .navbar-toggle:hover .icon-bar {
+    background-color: #2E2A24;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #2E2A24;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #F9D094;;
 }
 
 /* style the div w/ the id of "diana" */
-
 #diana {
-  background-color: green;
-  border-style: solid;
-  border-color: red;
+  /*background-color: green;*/
+  /*border-style: solid;*/
+  /*border-color: red;*/
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Roboto", sans-serif;
+  color: #F9D094;
 }
