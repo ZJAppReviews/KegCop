@@ -85,14 +85,26 @@ html, body {
     background-color: #2E2A24;
 }
 /* change color of hamburger menu outline */
-.navbar-default .navbar-toggle{
- border-color:#F9D094 ;
+.navbar-default .navbar-toggle {
+  border-color:#F9D094 ;
 }
 
-.navbar-default div.navbar-collapse
-{
-    border-top:none;
-    box-shadow:none;
+.navbar-default div.navbar-collapse {
+  border-top:none;
+  box-shadow:none;
+}
+
+.navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+  color: green;
+}
+
+/* set the color of the navbar-brand when hovered over with a mouse */
+.navbar-default .navbar-brand:hover {
+  color: #f9c06c;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #f9c06c;
 }
 
 /* style the div w/ the id of "diana" */
