@@ -5,11 +5,7 @@ var navbar = {};
 navbar.brand =  {linkTo: "#", text: "KegCop"};
 navbar.links = [
   {linkTo: "#", text: "Link 1"},
-  {linkTo: "#", text: "Link 2"},
-  {dropdown: true,text: "Dropdown",links: [
-    {linkTo: "#", text: "Dropdown Link 1"},
-    {linkTo: "#", text: "Dropdown Link 2", active: true}
-  ]}
+  {linkTo: "#", text: "Link 2"}
 ];
 
 // Create a new component.  This component should produce some HTML.
