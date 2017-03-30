@@ -42,6 +42,8 @@ html, body {
 
 .navbar-default .navbar-brand {
   color: #F9D094;
+  font-weight: 800;
+  font-size: 300%;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -64,7 +66,33 @@ html, body {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #F9D094;;
+    border-color: #F9D094;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #F9D094;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: #2E2A24;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    /*color: #2E2A24;*/
+    background-color: #2E2A24;
+}
+/* change color of hamburger menu outline */
+.navbar-default .navbar-toggle{
+ border-color:#F9D094 ;
+}
+
+.navbar-default div.navbar-collapse
+{
+    border-top:none;
+    box-shadow:none;
 }
 
 /* style the div w/ the id of "diana" */
