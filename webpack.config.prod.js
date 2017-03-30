@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: [
-    
+
     './index.js'
     // the entry point of our app
   ],
@@ -39,11 +39,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader?modules',
-          'postcss-loader',
-        ],
+        use: [ 'style-loader','css-loader', 'postcss-loader'],
       },
     ],
   },
