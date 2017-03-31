@@ -55,8 +55,8 @@ module.exports = {
         use: [ 'style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-        loader: 'url-loader?limit=100000'
+        test: /\.(png|woff|woff2|eot|ttf|svg|jpg)$/,
+        loader: 'url-loader?limit=10000000'
       },
 
       // the below webpack config was sourced from this,
@@ -66,14 +66,20 @@ module.exports = {
           test: /\.jpe?g$|\.ico$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/,
           loader: 'file-loader?name=[name].[ext]'  // <-- retain original file name
       },
-      {
-        test: /\.(png|jpg|)$/,
-        loader: 'file-loader?name=/images/[name].[ext]'
-      },
-      {
-        test: /\.(png|jpg|gif)$/,
-        loader: "file-loader?name=img/img-[hash:6].[ext]"
-      }
+      // {
+      //   test: /\.(ttf|woff|jpeg|jpg|png|gif|svg)$/,
+      //   use: [{
+      //     loader: "file-loader",
+      //       options: {
+      //         // outputPath: path.join("assets", "/docs"),
+      //         // outputPath: path.join("assets", "/"),
+      //         // outputPath: resolve(__dirname, 'docs'),
+      //         // publicPath: "/",
+      //         // publicPath: "assets/",
+      //         name: '[name]--[hash:base64:5].[ext]'
+      //       }
+      //   }]
+      // }
     ],
   },
 
