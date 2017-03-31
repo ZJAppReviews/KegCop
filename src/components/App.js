@@ -21,7 +21,11 @@ const App = (props) => {
         <img className="iphone-template" src={iPhone} />
       </div>
       <div id="message">
-        This is a test.
+        <h1>An iOS app for your kegerator!</h1>
+        <h4>KegCop is an open source iOS application that monitors a kegerator
+           by having drinkers create user accounts associated with the kegerator.
+           The admin of the kegerator will login with the root account,
+          and then issue credits to the users of the kegerator.</h4>
       </div>
       <div id="wilson">
         <div className="embed-responsive embed-responsive-4by3">
