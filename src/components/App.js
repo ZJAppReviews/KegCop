@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 import NavBar from './common/NavBar-test';
 // import iPhone from '../images/iphone-template.jpg';
-import iPhone from '../images/iphone-template.jpg';
+import iPhone from '../images/iphone-template.png';
 
 var navbar = {};
 navbar.brand =  {linkTo: "#", text: "KegCop"};
