@@ -1,8 +1,6 @@
 import React, {PropTypes} from 'react';
 import NavBar from './common/NavBar-test';
 import iPhone from '../images/iphone-template.png';
-import ReactGA from 'react-ga';
-ReactGA.initialize('UA-43223650-1');
 
 var navbar = {};
 navbar.brand =  {linkTo: "#", text: "KegCop"};
@@ -57,7 +55,5 @@ const App = (props) => {
 
   );
 };
-
-
 
 export default App;
