@@ -119,29 +119,31 @@ html, body {
 
 #iphone {
   padding-left: 10%;
-  /*border-style: solid;*/
-  /*border-color: red;*/
-  float: left;
+  border-style: solid;
+  border-color: red;
+  /*float: left;*/
   width: 50%;
+  position: relative;
   /*background-image: url("../images/iphone-template.jpg");*/
 }
 
 #message {
   padding-right: 5%;
   padding-top: 10%;
-  /*border-style: solid;*/
-  /*border-color: green;*/
-  float: right;
+  border-style: solid;
+  border-color: green;
+  /*float: right;*/
   width: 50%;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Roboto", sans-serif;
   color: #F9D094;
   height: 100%;
   text-align: center;
+  position: relative;
 }
 
 #wilson {
-  /*border-style: solid;*/
-  /*border-color: red;*/
+  border-style: solid;
+  border-color: red;
 }
 
 #chris {
