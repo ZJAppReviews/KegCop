@@ -1,5 +1,6 @@
 import React, {PropTypes} from 'react';
 import NavBar from './common/NavBar-test';
+import iPhone from '../images/iphone-template.jpg';
 
 var navbar = {};
 navbar.brand =  {linkTo: "#", text: "KegCop"};
@@ -15,7 +16,8 @@ const App = (props) => {
       <NavBar {...navbar} />
       {/* see scratchpad.txt for removed div. */}
       <div id="iphone">
-        
+        {/*<img src={iPhone} />*/}
+        <img className="iphone-template" src={iPhone} />
       </div>
       <div id="wilson">
         <div className="embed-responsive embed-responsive-4by3">

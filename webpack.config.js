@@ -58,14 +58,18 @@ module.exports = {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
         loader: 'url-loader?limit=100000'
       },
+
       // the below webpack config was sourced from this,
       // https://github.com/coryhouse/react-slingshot/issues/128
       // in order to load favicon.
-
       {
           test: /\.jpe?g$|\.ico$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/,
           loader: 'file-loader?name=[name].[ext]'  // <-- retain original file name
-      }
+      },
+      {
+        test: /\.(png|jpg|)$/,
+        loader: 'url-loader?limit=200000'
+      },
     ],
   },
 

@@ -116,7 +116,18 @@ html, body {
   color: #F9D094;
 }
 
+#iphone {
+  border-style: solid;
+  border-color: red;
+  /*background-image: url("../images/iphone-template.jpg");*/
+}
+
 #wilson {
+  /*border-style: solid;*/
+  /*border-color: red;*/
+}
+
+#chris {
   /*border-style: solid;*/
   /*border-color: red;*/
 }
