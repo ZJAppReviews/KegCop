@@ -20,6 +20,9 @@ const App = (props) => {
         {/*<img src={iPhone} />*/}
         <img className="iphone-template" src={iPhone} />
       </div>
+      <div id="message">
+        This is a test.
+      </div>
       <div id="wilson">
         <div className="embed-responsive embed-responsive-4by3">
           <iframe className="embed-responsive-item"

@@ -117,9 +117,20 @@ html, body {
 }
 
 #iphone {
-  /*border-style: solid;*/
-  /*border-color: red;*/
+  padding-left: 10%;
+  border-style: solid;
+  border-color: red;
+  float: left;
+  width: 50%;
   /*background-image: url("../images/iphone-template.jpg");*/
+}
+
+#message {
+  padding-right: 10%;
+  border-style: solid;
+  border-color: green;
+  float: right;
+  width: 50%;
 }
 
 #wilson {
