@@ -117,10 +117,30 @@ html, body {
   color: #F9D094;
 }
 
+#container {
+    display: flex; /* establish flex container */
+        flex-direction: row; /* make main axis horizontal (default value) */
+        justify-content: center; /* center items horizontally, in this case */
+        align-items: center; /* center items vertically, in this case */
+    /*height: 300px; /* for demo purposes */
+    /*border: 1px solid black; /* for demo purposes */
+    /*background-color: #eee; /* for demo purposes */
+}
+
+.box {
+    width: 500px;
+    margin: 5px;
+    text-align: center;
+}
+
+/*#bluebox { background: aqua; }*/
+/*#redbox { background: red; }*/
+
 #iphone {
   padding-left: 10%;
-  border-style: solid;
-  border-color: red;
+  padding-bottom: 10%;
+  /*border-style: solid;*/
+  /*border-color: red;*/
   /*float: left;*/
   width: 50%;
   position: relative;
@@ -130,10 +150,11 @@ html, body {
 #message {
   padding-right: 5%;
   padding-top: 10%;
-  border-style: solid;
-  border-color: green;
+  padding-left: 20%;
+  /*border-style: solid;
+  border-color: green;*/
   /*float: right;*/
-  width: 50%;
+  /*width: 50%;*/
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Roboto", sans-serif;
   color: #F9D094;
   height: 100%;
@@ -142,8 +163,8 @@ html, body {
 }
 
 #wilson {
-  border-style: solid;
-  border-color: red;
+  /*border-style: solid;*/
+  /*border-color: red;*/
 }
 
 #chris {

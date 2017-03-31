@@ -16,24 +16,23 @@ const App = (props) => {
     <div id="parent">
       <NavBar {...navbar} />
       {/* see scratchpad.txt for removed div. */}
-      <div className="container">
-        <div class="row">
-          <div class="col-md-4">
+      <div id="container">
+
+        <div class="box" id="bluebox">
             <div id="iphone">
               <img className="iphone-template" src={iPhone} />
             </div>
-          </div>
         </div>
 
-          <div class="col-md-8">
+          <div class="box" id="redbox">
             <div id="message">
               <h1>An iOS app for your kegerator!</h1>
               <h4>KegCop is an open source iOS application that monitors a kegerator
            by having drinkers create user accounts associated with the kegerator.
            The admin of the kegerator will login with the root account,
           and then issue credits to the users of the kegerator.</h4>
+            </div>
           </div>
-        </div>
       </div>
 
       <div id="wilson">
@@ -54,7 +53,7 @@ const App = (props) => {
         </div>
       </div> {/* chris */}
     </div>
-  </div>
+
   );
 };
 
