@@ -6,11 +6,8 @@ import './styles/styles.css';
 import ReactGA from 'react-ga';
 ReactGA.initialize('UA-43223650-1');
 
-
-function logPageView() {
-  ReactGA.set({ page: window.location.pathname });
-  ReactGA.pageview(window.location.pathname);
-}
+ReactGA.set({ page: window.location.pathname });
+ReactGA.pageview(window.location.pathname);
 
 // Take this component's generated HTML
 // and put it on the page (in the DOM)
