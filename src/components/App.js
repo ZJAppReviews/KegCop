@@ -14,6 +14,9 @@ const App = (props) => {
     <div id="parent">
       <NavBar {...navbar} />
       {/* see scratchpad.txt for removed div. */}
+      <div id="iphone">
+        
+      </div>
       <div id="wilson">
         <div className="embed-responsive embed-responsive-4by3">
           <iframe className="embed-responsive-item"
