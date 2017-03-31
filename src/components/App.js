@@ -19,13 +19,13 @@ const App = (props) => {
       {/* see scratchpad.txt for removed div. */}
       <div id="container">
 
-        <div class="box" id="bluebox">
+        <div className="box" id="bluebox">
             <div id="iphone">
               <img className="iphone-template" src={iPhone} />
             </div>
         </div>
 
-          <div class="box" id="redbox">
+          <div className="box" id="redbox">
             <div id="message">
               <h1>An iOS app for your kegerator!</h1>
               <h4>KegCop is an open source iOS application that monitors a kegerator
@@ -57,5 +57,7 @@ const App = (props) => {
 
   );
 };
+
+
 
 export default App;
