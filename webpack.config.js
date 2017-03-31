@@ -54,38 +54,12 @@ module.exports = {
         test: /\.css$/,
         use: [ 'style-loader', 'css-loader'],
       },
-      // {
-      //   test: /\.(png|woff|woff2|eot|ttf|svg|jpg)$/,
-      //   loader: 'url-loader?limit=10000000'
-      // },
-
-      // the below webpack config was sourced from this,
-      // https://github.com/coryhouse/react-slingshot/issues/128
-      // in order to load favicon.
-      // {
-      //     test: /\.jpe?g$|\.ico$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/,
-      //     loader: 'file-loader?name=[name].[ext]'  // <-- retain original file name
-      // },
-      // {
-      //   test: /\.(ttf|woff|jpeg|jpg|png|gif|svg)$/,
-      //   use: [{
-      //     loader: "file-loader",
-      //       options: {
-      //         // outputPath: path.join("assets", "/docs"),
-      //         // outputPath: path.join("assets", "/"),
-      //         // outputPath: resolve(__dirname, 'docs'),
-      //         outputPath: path.resolve(__dirname, 'docs/assets'),
-      //         // publicPath: "/",
-      //         // publicPath: "assets/",
-      //         publicPath: "/assets/",
-      //         name: '[name]--[hash:base64:5].[ext]'
-      //       }
-      //   }]
-      // }
-      // {
-      //   test: /\.(jpe?g|png|gif|svg)$/i,
-      //   loader: "file-loader?name=/docs/images/[name].[ext]"
-      // }
+      {
+        test: /\.(png|jpg|svg)$/,
+        use: {
+          loader: 'url-loader',
+        },
+      },
     ],
   },
 
