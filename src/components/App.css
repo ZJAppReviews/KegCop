@@ -144,6 +144,9 @@ html, body {
   /*float: left;*/
   width: 50%;
   position: relative;
+  /* Note: the below CSS property fixes the clipping issue,
+     see: http://stackoverflow.com/questions/43213062/ */
+  height: 100vh;
   /*background-image: url("../images/iphone-template.jpg");*/
 }
 
