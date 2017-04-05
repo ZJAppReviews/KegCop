@@ -5,8 +5,8 @@ import iPhone from '../images/iphone-template.png';
 var navbar = {};
 navbar.brand =  {linkTo: "#", text: "KegCop"};
 navbar.links = [
-  {linkTo: "#", text: "Demonstration"},
-  {linkTo: "#", text: "Demonstration #2"}
+  {linkTo: "#Demonstration", text: "Demonstration"},
+  {linkTo: "#Demonstration2", text: "Demonstration #2"}
 ];
 
 // Create a new component.  This component should produce some HTML.
@@ -34,7 +34,9 @@ const App = (props) => {
           </div>
       </div>
 
+
       <div id="wilson">
+        <a name="Demonstration"></a>
         <div className="embed-responsive embed-responsive-4by3">
           <iframe className="embed-responsive-item"
                 src="https://www.youtube.com/embed/1a6hxUb3zfU"
@@ -42,8 +44,10 @@ const App = (props) => {
           </iframe>
         </div>
       </div> {/* wilson */}
+
       {/* insert video #2 below */}
       <div id="chris">
+        <a name="Demonstration2"></a>
         <div className="embed-responsive embed-responsive-4by3">
           <iframe className="embed-responsive-item"
                 src="https://www.youtube.com/embed/tNWhGGUwZjg"
