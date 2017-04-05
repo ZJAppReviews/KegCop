@@ -125,16 +125,22 @@ html, body {
     /*height: 300px; /* for demo purposes */
     /*border: 1px solid black; /* for demo purposes */
     /*background-color: #eee; /* for demo purposes */
+    /*border-style: solid;
+    border-color: pink;*/
 }
 
 .box {
     width: 500px;
     margin: 5px;
     text-align: center;
+    /*border-style: solid;
+    border-color: blue;*/
 }
 
 /*#bluebox { background: aqua; }*/
 /*#redbox { background: red; }*/
+
+
 
 #iphone {
   padding-left: 10%;
@@ -186,4 +192,30 @@ html, body {
 #chris {
   /*border-style: solid;*/
   /*border-color: red;*/
+}
+
+/*@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {*/
+/* STYLES GO HERE */
+/*#iphone { display: none; } /* hide iphone image on iPhone. */
+
+/*}*/
+
+@media only screen
+    and (max-device-width: 640px),
+    only screen and (max-device-width: 667px),
+    only screen and (max-width: 480px)
+{
+  #iphone { display: none; } /* hide iphone image on iPhone. */
+
+  #bluebox { display: none; }
+
+  #message {
+    width: 100%;
+    padding: 0;
+    padding-left: 0;
+    /*border-style: solid;
+    border-color: green;*/
+  }
 }
