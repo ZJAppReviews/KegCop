@@ -74,7 +74,7 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     }
 
     // prevent standard hash navigation (avoid blinking in IE)
-    e.preventDefault();
+    // e.preventDefault();
 
     // top position relative to the document
     var pos = $id.offset().top;
