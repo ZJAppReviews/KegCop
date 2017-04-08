@@ -62,6 +62,7 @@ const App = (props) => {
 };
 
 // handle links with @href started with '#' only
+// http://stackoverflow.com/a/26129950/708807
 $(document).on('click', 'a[href^="#"]', function(e) {
     // target element id
     var id = $(this).attr('href');
