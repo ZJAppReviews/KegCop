@@ -1,6 +1,7 @@
 import React, {PropTypes} from 'react';
 import NavBar from './common/NavBar-test';
 import iPhone from '../images/iphone-template.png';
+import $ from 'jquery';
 
 var navbar = {};
 navbar.brand =  {linkTo: "#", text: "KegCop"};
@@ -13,7 +14,7 @@ navbar.links = [
 const App = (props) => {
   return (
     <div id="parent">
-      <NavBar {...navbar} />
+      <NavBar {...navbar} id="navbar" />
       {/* see scratchpad.txt for removed div. */}
       <div id="container">
 
@@ -35,8 +36,8 @@ const App = (props) => {
       </div>
 
 
-      <div id="wilson">
-        <a name="Demonstration"></a>
+      <div id="Demonstration">
+        <a href="#Demonstration" className="scroll"></a>
         <div className="embed-responsive embed-responsive-4by3">
           <iframe className="embed-responsive-item"
                 src="https://www.youtube.com/embed/1a6hxUb3zfU"
@@ -46,8 +47,8 @@ const App = (props) => {
       </div> {/* wilson */}
 
       {/* insert video #2 below */}
-      <div id="chris">
-        <a name="Demonstration2"></a>
+      <div id="Demonstration2">
+        <a href="#Demonstration2" className="scroll"></a>
         <div className="embed-responsive embed-responsive-4by3">
           <iframe className="embed-responsive-item"
                 src="https://www.youtube.com/embed/tNWhGGUwZjg"
@@ -59,5 +60,27 @@ const App = (props) => {
 
   );
 };
+
+// handle links with @href started with '#' only
+$(document).on('click', 'a[href^="#"]', function(e) {
+    // target element id
+    var id = $(this).attr('href');
+
+    // target element
+    var $id = $(id);
+    if ($id.length === 0) {
+        return;
+    }
+
+    // prevent standard hash navigation (avoid blinking in IE)
+    e.preventDefault();
+
+    // top position relative to the document
+    var pos = $id.offset().top;
+
+    // animated top scrolling
+    $('body, html').animate({scrollTop: pos});
+});
+
 
 export default App;
