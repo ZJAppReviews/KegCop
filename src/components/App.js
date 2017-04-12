@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 import NavBar from './common/NavBar-test';
 import iPhone from '../images/iphone-template.png';
-import { Earphone, Github } from './common/GlyphiconConstants';
+import { Github } from './common/GlyphiconConstants';
 // console.log(Github);
 import $ from 'jquery';
 
@@ -34,6 +34,7 @@ const App = (props) => {
 
               <div className="box" id="redbox">
                 <div id="message">
+                  <span>{Github}</span>
                   <h1>An iOS app for your kegerator!</h1>
                   <h4>KegCop is an open source iOS application that monitors a kegerator
                by having drinkers create user accounts associated with the kegerator.
