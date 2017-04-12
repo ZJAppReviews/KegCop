@@ -13,7 +13,7 @@ navbar.links = [
 
   {linkTo: "#Demonstration", text: "Demonstration"},
   {linkTo: "#Demonstration2", text: "Demonstration #2"},
-  {linkTo: "https://github.com/ipatch/KegCop", text: "GitHub Source Code", icon: Github },
+  {linkTo: "https://github.com/ipatch/KegCop", text:"GitHub Source Code"},
   {linkTo: "https://itunes.apple.com/us/app/kegcop/id989403454?mt=8", text: "App Store"},
   {linkTo: "https://github.com/ipatch/kegcopr", text: "The Future of KegCop"}
 ];
@@ -42,6 +42,10 @@ const App = (props) => {
                 {/* React.render(<FontAwesome name='rocket' />, document.body);*/}
 
                 {/* className="fa fa-spinner fa-spin" */}
+
+                <div id="githubicon">
+                  <FontAwesome name='github' />
+                </div>
 
                   <h1>An iOS app for your kegerator!</h1>
                   <h4>KegCop is an open source iOS application that monitors a kegerator
