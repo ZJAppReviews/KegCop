@@ -2,6 +2,8 @@ import React, {PropTypes} from 'react';
 import NavBar from './common/NavBar-test';
 import iPhone from '../images/iphone-template.png';
 import { Github } from './common/GlyphiconConstants';
+import FontAwesome from 'react-fontawesome';
+
 // console.log(Github);
 import $ from 'jquery';
 
@@ -34,7 +36,13 @@ const App = (props) => {
 
               <div className="box" id="redbox">
                 <div id="message">
-                  <span>{Github}</span>
+
+                {/* insert icon below */}
+
+                {/* React.render(<FontAwesome name='rocket' />, document.body);*/}
+
+                {/* className="fa fa-spinner fa-spin" */}
+
                   <h1>An iOS app for your kegerator!</h1>
                   <h4>KegCop is an open source iOS application that monitors a kegerator
                by having drinkers create user accounts associated with the kegerator.
@@ -94,6 +102,21 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     // animated top scrolling
     $('body, html').animate({scrollTop: pos});
 });
+
+var MyComponent = React.createClass({
+  render: function () {
+    return (
+      <FontAwesome
+        className='super-crazy-colors'
+        name='rocket'
+        size='2x'
+        spin
+        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+      />
+    );
+  }
+});
+
 
 
 export default App;
