@@ -87,6 +87,8 @@ var NavLink = React.createClass({
   }
 });
 
+// <a href={this.props.linkTo}>{this.props.text}</a>
+
 // set data
 // var navbar = {};
 // navbar.brand =

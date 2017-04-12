@@ -3,18 +3,14 @@ import NavBar from './common/NavBar-test';
 import iPhone from '../images/iphone-template.png';
 import $ from 'jquery';
 
-const githubSource = "https://github.com/ipatch/KegCop"
-
-
-
 var navbar = {};
 navbar.brand =  {linkTo: "#", text: "KegCop"};
 navbar.links = [
 
   {linkTo: "#Demonstration", text: "Demonstration"},
   {linkTo: "#Demonstration2", text: "Demonstration #2"},
-  {linkTo: <a href="https://github.com/ipatch/KegCop"></a>, text: "GitHub Source Code"},
-  {linkTo: "The Future of KegCop", text: "The Future of KegCop"}
+  {linkTo: "https://github.com/ipatch/KegCop", text: "GitHub Source Code"},
+  {linkTo: "https://github.com/ipatch/kegcopr", text: "The Future of KegCop"}
 ];
 
 // Create a new component.  This component should produce some HTML.
