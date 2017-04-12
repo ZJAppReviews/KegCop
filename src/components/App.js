@@ -56,6 +56,9 @@ const App = (props) => {
           </iframe>
         </div>
       </div> {/* chris */}
+      <div id="footer">
+        <p>Coded with &#9825; by: Chris Jones &copy; 2017</p>
+      </div>
     </div>
 
   );
