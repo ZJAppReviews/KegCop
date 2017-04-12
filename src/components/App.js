@@ -1,7 +1,8 @@
 import React, {PropTypes} from 'react';
 import NavBar from './common/NavBar-test';
 import iPhone from '../images/iphone-template.png';
-import { Github, } from './common/GlyphiconConstants';
+import { Earphone, Github } from './common/GlyphiconConstants';
+// console.log(Github);
 import $ from 'jquery';
 
 var navbar = {};

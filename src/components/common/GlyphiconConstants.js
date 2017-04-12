@@ -1,4 +1,5 @@
-import React from 'react';
+// import React from 'react';
+var React = require('react');
 
 var GlyphiconConstants = {
     Earphone: <span className='glyphicon glyphicon-earphone' />,
@@ -438,5 +439,5 @@ var GlyphiconConstants = {
     Skype: <span className='glyphicon glyphicon-skype' />
 };
 
-// module.exports = GlyphiconConstants;
-export default GlyphiconConstants;
+module.exports = GlyphiconConstants;
+// export default GlyphiconConstants;
