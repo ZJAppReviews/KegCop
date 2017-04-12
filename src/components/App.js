@@ -1,6 +1,7 @@
 import React, {PropTypes} from 'react';
 import NavBar from './common/NavBar-test';
 import iPhone from '../images/iphone-template.png';
+import { Github, } from './common/GlyphiconConstants';
 import $ from 'jquery';
 
 var navbar = {};
@@ -9,7 +10,7 @@ navbar.links = [
 
   {linkTo: "#Demonstration", text: "Demonstration"},
   {linkTo: "#Demonstration2", text: "Demonstration #2"},
-  {linkTo: "https://github.com/ipatch/KegCop", text: "GitHub Source Code"},
+  {linkTo: "https://github.com/ipatch/KegCop", text: "GitHub Source Code", icon: Github },
   {linkTo: "https://itunes.apple.com/us/app/kegcop/id989403454?mt=8", text: "App Store"},
   {linkTo: "https://github.com/ipatch/kegcopr", text: "The Future of KegCop"}
 ];
