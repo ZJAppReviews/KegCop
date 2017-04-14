@@ -15,11 +15,11 @@ var navbar = {};
 navbar.brand =  {linkTo: "#", text: "KegCop"};
 navbar.links = [
 
-  {linkTo: "#Demonstration", text: "Demonstration"},
-  {linkTo: "#Demonstration2", text: "Demonstration #2"},
+  {linkTo: "#Demonstration", text: "Demonstration", icon:<FontAwesome name='youtube' /> },
+  {linkTo: "#Demonstration2", text: "Demonstration #2", icon:<FontAwesome name='youtube' />},
   {linkTo: "https://github.com/ipatch/KegCop", text:"GitHub Source Code", icon:<FontAwesome name='github' /> },
-  {linkTo: "https://itunes.apple.com/us/app/kegcop/id989403454?mt=8", text: "App Store"},
-  {linkTo: "https://github.com/ipatch/kegcopr", text: "The Future of KegCop"}
+  {linkTo: "https://itunes.apple.com/us/app/kegcop/id989403454?mt=8", text: "App Store", icon:<FontAwesome name='apple' />},
+  {linkTo: "https://github.com/ipatch/kegcopr", text: "The Future of KegCop", icon:<FontAwesome name='github' />}
 
 ];
 
