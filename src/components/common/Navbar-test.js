@@ -1,16 +1,12 @@
 // Note: this bootstrap navbar example is sourced from the below codepen,
 // ... http://codepen.io/zhaozhiming/pen/LNGyvR
 
-
 import React, { PropTypes } from 'react';
 // import { Link, IndexLink } from 'react-router';
 // import { browserHistory, Router, Route } from 'react-router';
 
 // create classes
-
-// OLD var NavBar = React.createClass({
 class NavBar extends React.Component {
-  // OLD render: function(){
   render() {
     return(
       <nav className="navbar navbar-default navbar-static-top">
@@ -33,16 +29,16 @@ class NavBar extends React.Component {
   } // closing handlebar for render method.
 } // closing handlebar for NavBar class.
 
-var NavBrand = React.createClass({
-  render: function(){
-    return (
+class NavBrand extends React.Component {
+  render() {
+    return(
       <a className="navbar-brand" href={this.props.linkTo}>{this.props.text}</a>
     );
   }
-});
+}
 
-var NavMenu = React.createClass({
-  render: function(){
+class NavMenu extends React.Component {
+  render() {
     var links = this.props.links.map(function(link){
       if(link.dropdown) {
         return (
@@ -51,7 +47,7 @@ var NavMenu = React.createClass({
       }
       else {
         return (
-          <NavLink key={link.text} linkTo={link.linkTo} text={link.text} active={link.active} />
+          <NavLink key={link.text} linkTo={link.linkTo} text={link.text} active={link.active} icon={link.icon} />
         );
       }
     });
@@ -59,9 +55,9 @@ var NavMenu = React.createClass({
       <ul className="nav navbar-nav">
         {links}
       </ul>
-    );
-  }
-});
+    ); // close return
+  } // close render
+} // close NavMenu
 
 var NavLinkDropdown = React.createClass({
   render: function(){
