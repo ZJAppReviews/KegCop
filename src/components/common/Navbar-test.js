@@ -1,10 +1,17 @@
+// Note: this bootstrap navbar example is sourced from the below codepen,
+// ... http://codepen.io/zhaozhiming/pen/LNGyvR
+
+
 import React, { PropTypes } from 'react';
 // import { Link, IndexLink } from 'react-router';
 // import { browserHistory, Router, Route } from 'react-router';
 
 // create classes
-var NavBar = React.createClass({
-  render: function(){
+
+// OLD var NavBar = React.createClass({
+class NavBar extends React.Component {
+  // OLD render: function(){
+  render() {
     return(
       <nav className="navbar navbar-default navbar-static-top">
         <div className="container-fluid">
@@ -23,8 +30,8 @@ var NavBar = React.createClass({
         </div>
       </nav>
     );
-  }
-});
+  } // closing handlebar for render method.
+} // closing handlebar for NavBar class.
 
 var NavBrand = React.createClass({
   render: function(){
