@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-// import { Github, } from './GlyphiconConstants';
 // import { Link, IndexLink } from 'react-router';
 // import { browserHistory, Router, Route } from 'react-router';
 
