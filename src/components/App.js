@@ -17,7 +17,7 @@ navbar.links = [
 
   {linkTo: "#Demonstration", text: "Demonstration"},
   {linkTo: "#Demonstration2", text: "Demonstration #2"},
-  {linkTo: "https://github.com/ipatch/KegCop", text:"GitHub Source Code", icon: <FontAwesome name='github' />},
+  {linkTo: "https://github.com/ipatch/KegCop", text:"GitHub Source Code", icon:<FontAwesome name='github' /> },
   {linkTo: "https://itunes.apple.com/us/app/kegcop/id989403454?mt=8", text: "App Store"},
   {linkTo: "https://github.com/ipatch/kegcopr", text: "The Future of KegCop"}
 
@@ -41,17 +41,6 @@ const App = (props) => {
 
               <div className="box" id="redbox">
                 <div id="message">
-
-                {/* insert icon below */}
-
-                {/* React.render(<FontAwesome name='rocket' />, document.body);*/}
-
-                {/* className="fa fa-spinner fa-spin" */}
-
-                <div id="githubicon">
-                  <FontAwesome name='github' />
-                </div>
-
                   <h1>An iOS app for your kegerator!</h1>
                   <h4>KegCop is an open source iOS application that monitors a kegerator
                by having drinkers create user accounts associated with the kegerator.

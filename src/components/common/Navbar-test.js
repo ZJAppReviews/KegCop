@@ -47,7 +47,7 @@ class NavMenu extends React.Component {
       }
       else {
         return (
-          <NavLink key={link.text} linkTo={link.linkTo} text={link.text} active={link.active} icon={link.icon} />
+          <NavLink key={link.text} linkTo={link.linkTo} icon={link.icon} text={link.text} active={link.active}  />
         );
       }
     });
@@ -88,7 +88,8 @@ var NavLink = React.createClass({
   render: function(){
     return(
       <li className={(this.props.active ? "active" : "")}>
-        <a href={this.props.linkTo}>{this.props.text}{this.props.icon}</a>
+        {/* below sets the order for what appears in the navbar links. */}
+        <a href={this.props.linkTo}>{this.props.icon} {this.props.text}</a>
       </li>
     );
   }
