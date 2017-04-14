@@ -1,11 +1,17 @@
 import React, {PropTypes} from 'react';
 import NavBar from './common/NavBar-test';
+import NavLink from './common/NavLink';
 import iPhone from '../images/iphone-template.png';
 import { Github } from './common/GlyphiconConstants';
 import FontAwesome from 'react-fontawesome';
 
 // console.log(Github);
 import $ from 'jquery';
+
+
+<span>
+  <NavLink><FontAwesome name='github' />GitHub Source Code</NavLink>
+</span>
 
 var navbar = {};
 navbar.brand =  {linkTo: "#", text: "KegCop"};
@@ -16,6 +22,7 @@ navbar.links = [
   {linkTo: "https://github.com/ipatch/KegCop", text:"GitHub Source Code"},
   {linkTo: "https://itunes.apple.com/us/app/kegcop/id989403454?mt=8", text: "App Store"},
   {linkTo: "https://github.com/ipatch/kegcopr", text: "The Future of KegCop"}
+
 ];
 
 // Create a new component.  This component should produce some HTML.
