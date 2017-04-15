@@ -1,0 +1,33 @@
+#container {
+  /*border-style: solid;
+  border-color: green;*/
+  display: flex;
+  justify-content: center;
+  text-align:center;
+}
+
+#meBody {
+  /*background-image: url(./404-background-05.png);*/
+  /*border-style: solid;
+  border-color: red;*/
+  min-height: 100%;
+  background-repeat: no-repeat;
+  width:80vw;
+  height:80vh;
+}
+
+/*.fit {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.center {
+    display: block;
+    margin: auto;
+}*/
+
+img {
+   max-width:100%;
+   height:auto;
+   max-height:100%;
+}
