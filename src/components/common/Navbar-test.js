@@ -25,13 +25,9 @@ const NavBar = (props) => (
   </nav>
 );
 
-class NavBrand extends React.Component {
-  render() {
-    return(
-      <a className="navbar-brand" href={this.props.linkTo}>{this.props.text}</a>
-    );
-  }
-}
+const NavBrand = (props) => (
+      <a className="navbar-brand" href={props.linkTo}>{props.text}</a>
+);
 
 class NavMenu extends React.Component {
   render() {
