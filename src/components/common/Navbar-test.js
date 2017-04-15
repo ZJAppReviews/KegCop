@@ -6,28 +6,24 @@ import React, { PropTypes } from 'react';
 // import { browserHistory, Router, Route } from 'react-router';
 
 // create classes
-class NavBar extends React.Component {
-  render() {
-    return(
-      <nav className="navbar navbar-default navbar-static-top">
-        <div className="container-fluid">
-          <div className="navbar-header">
-            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-              <span className="sr-only">Toggle navigation</span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-            </button>
-            <NavBrand linkTo={this.props.brand.linkTo} text={this.props.brand.text} />
-          </div>
-          <div className="collapse navbar-collapse" id="navbar-collapse">
-            <NavMenu links={this.props.links} />
-          </div>
-        </div>
-      </nav>
-    );
-  } // closing handlebar for render method.
-} // closing handlebar for NavBar class.
+const NavBar = (props) => (
+  <nav className="navbar navbar-default navbar-static-top">
+    <div className="container-fluid">
+      <div className="navbar-header">
+        <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span className="sr-only">Toggle navigation</span>
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+        </button>
+        <NavBrand linkTo={props.brand.linkTo} text={props.brand.text} />
+      </div>
+      <div className="collapse navbar-collapse" id="navbar-collapse">
+        <NavMenu links={props.links} />
+      </div>
+    </div>
+  </nav>
+);
 
 class NavBrand extends React.Component {
   render() {
