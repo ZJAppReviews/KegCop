@@ -8,12 +8,43 @@
 
 #meBody {
   /*background-image: url(./404-background-05.png);*/
-  /*border-style: solid;
-  border-color: red;*/
+  /*border-style: solid;*/
+  /*border-color: red;*/
   min-height: 100%;
   background-repeat: no-repeat;
-  width:80vw;
+  /*width:80vw;*/
   height:80vh;
+}
+
+#meArm {
+  /*border-style: solid;
+  border-color: blue;*/
+  margin-left: -60px;
+  zoom: 0.5;
+  transform: rotate(-45deg) scale(0.5);;
+  /*transform: */
+  /*transform: rotate(20deg);*/
+   /*transform-origin: bottom;*/
+   /*animation-name: armMove;*/
+   animation-duration: 5s;
+   /*animation: infinite;*/
+   animation: armMove 2s infinite;
+}
+
+@keyframes armMove {
+  from {
+    /*transform-origin: bottom;*/
+    transform: rotate(-45deg) scale(0.5);
+    zoom: 0.5;
+    /*-moz-transform: ;*/
+
+  }
+  to {
+    /*transform-origin: bottom;*/
+    transform: rotate(45deg) scale(0.6);
+    /*zoom: 0.5;*/
+    /*-moz-transform: ;*/
+  }
 }
 
 /*.fit {
