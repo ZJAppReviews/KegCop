@@ -5,12 +5,6 @@ import iPhone from '../images/iphone-template.png';
 import FontAwesome from 'react-fontawesome';
 import $ from 'jquery';
 
-{/*
-<span>
-  <NavLink><FontAwesome name='github' />GitHub Source Code</NavLink>
-</span>
-*/}
-
 var navbar = {};
 navbar.brand =  {linkTo: "#", text: "KegCop"};
 navbar.links = [
@@ -114,7 +108,5 @@ var MyComponent = React.createClass({
     );
   }
 });
-
-
 
 export default App;
